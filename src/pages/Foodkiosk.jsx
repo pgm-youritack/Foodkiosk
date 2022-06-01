@@ -3,7 +3,8 @@ import styles from "styled-components";
 import CategoryList from "../components/CategoryList";
 import Options from "../components/Options";
 import logo from "../assets/images/pita.png"
-
+import { FOOD_API } from "../constants/api";
+import useFetch from "../hooks/useFetch";
 const MenuFlex = styles.div`
   display:flex;
   flex-direction:row;
@@ -19,7 +20,11 @@ const Logo = styles.img`
 `;
 
 const Foodkiosk = () => {
+  const [data, error, loading] = useFetch(FOOD_API);
+  const [items,setItems]=useState(data);
+  const [categories,setCategories]=useState();
   const [showOptions, setShowOptions] = useState("PITA");
+
   const changeOption = (option) => {
     option = option.toUpperCase();
     setShowOptions(option);

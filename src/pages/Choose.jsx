@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "styled-components";
-import ROUTES from "../routes";
+import { ROUTES } from "../constants/routes";
 import TakeOut from "../assets/images/fast-dlivery.svg";
 import Delivery from "../assets/images/food-delivery.svg";
 import Pita from "../assets/images/pita.png";

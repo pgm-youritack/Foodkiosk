@@ -3,7 +3,7 @@ import {Route,Routes} from 'react-router-dom';
 import Foodkiosk from './pages/Foodkiosk';
 import NotFound from './pages/NotFound';
 import Choose  from './pages/Choose';
-import ROUTES from './routes';
+import { ROUTES } from "./constants/routes";
 
 function App() {
   return (

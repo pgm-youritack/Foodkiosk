@@ -1,0 +1,1 @@
+export const FOOD_API = 'https://pgm-youritack.github.io/Foodkiosk/food.json';
