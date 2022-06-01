@@ -1,0 +1,52 @@
+[
+    {
+        "categories": [
+            "Pita",
+            "kapsalon",
+            "durum",
+            "snacks",
+            "frietjes",
+            "frisdrank"
+        ],
+        "pita":[
+            {
+                "id":1,
+                "name":"pita klein"
+            },
+            {
+                "id":2,
+                "name":"pita groot"
+            
+            },
+            {
+                "id":3,
+                "name":"pita klein kip"
+            
+            },
+            {
+                "id":4,
+                "name":"pita groot  kip"
+            
+            },
+            {
+                "id":5,
+                "name":"pita klein mix"
+            
+            },
+            {
+                "id":6,
+                "name":"pita groot mix"
+            
+            },
+            {
+                "id":7,
+                "name":"pita klein kipfilet"
+            
+            },
+            {
+                "id":8,
+                "name":"pita groot kipfilet"
+            }
+        ]
+    }
+]

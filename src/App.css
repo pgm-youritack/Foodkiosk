@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+body{
+  font-family: 'open-sans';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li{
+  font-family: 'arial';
+  font-size: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'open-Sans';
+  src: url('./assets/fonts/Sora-Regular.ttf'),
+      url('./assets/fonts/Sora-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: 'LangscapeDevPriya ';
+  src: url('./assets/fonts/LSDPRI-N.TTF'),
+      url('./assets/fonts/LSDPRI-B.TTF');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
