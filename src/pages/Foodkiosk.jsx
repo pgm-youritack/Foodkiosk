@@ -22,10 +22,8 @@ const Logo = styles.img`
 
 const Foodkiosk = () => {
   const [data, error, isLoading] = useFetch(FOOD_API);
-  const [items, setItems] = useState(data);
   const [cart, setCart] = useContext(ShoppingCartContext);
-  const [showOptions, setShowOptions] = useState("PITA");
-  console.log(data);
+  const [showOptions, setShowOptions] = useState(data);
   const changeOption = (option) => {
     option = option.toUpperCase();
     setShowOptions(option);
@@ -42,8 +40,8 @@ const Foodkiosk = () => {
             <Logo src={logo} alt="logo" />
           </Header>
           <MenuFlex>
-            <CategoryList onClick={changeOption}></CategoryList>
-            <Options options={showOptions}></Options>
+            <CategoryList onClick={changeOption} items={data.categories}></CategoryList>
+            <Options options={showOptions} items={data.pita}></Options>
           </MenuFlex>
         </div>
       )}

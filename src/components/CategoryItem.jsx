@@ -16,12 +16,12 @@ const Image = styles.img`
 `
 
 const CategoryItem = ({ item,onClick}) => {
-  const img = require(`../assets/images/categories/${item.category}.png`)
+  const img = require(`../assets/images/categories/${item.name}.png`)
   return (
     <>
-      <ListItem onClick={()=>onClick(item.category)}>
-        <Image src={img} alt={item.category} />
-        {item.category}
+      <ListItem onClick={()=>onClick(item.name)}>
+        <Image src={img} alt={item.name} />
+        {item.name}
       </ListItem>
     </>
   );

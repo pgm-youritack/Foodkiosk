@@ -16,9 +16,7 @@
     {
       "id": 89798449484565,
       "name": "snacks"
-    }
-    ,
-
+    },
     {
       "id": 98855554444,
       "name": "frietjes"
@@ -30,40 +28,74 @@
     }
   ],
 
-
-
   "pita": [
     {
-      "id": 1,
+      "id": 125678484984,
       "name": "pita klein"
     },
     {
-      "id": 2,
+      "id": 5645645645656,
       "name": "pita groot"
     },
     {
-      "id": 3,
+      "id": 345654638678,
       "name": "pita klein kip"
     },
     {
-      "id": 4,
+      "id": 4678687972978,
       "name": "pita groot  kip"
     },
     {
-      "id": 5,
+      "id": 529782982978,
       "name": "pita klein mix"
     },
     {
-      "id": 6,
+      "id": 67927897863,
       "name": "pita groot mix"
     },
     {
-      "id": 7,
+      "id": 707667867806,
       "name": "pita klein kipfilet"
     },
     {
-      "id": 8,
+      "id": 87687976376,
       "name": "pita groot kipfilet"
+    }
+  ]
+  ,
+
+  "durum": [
+    {
+      "id": 1786856325863,
+      "name": "durum klein"
+    },
+    {
+      "id": 67856367862,
+      "name": "durum groot"
+    },
+    {
+      "id": 306786876786,
+      "name": "durum klein kip"
+    },
+    {
+      "id": 40786876876,
+      "name": "durum groot  kip"
+    },
+    {
+      "id": 57860876876,
+      "name": "durum klein mix"
+    },
+    {
+      "id": 67860786876,
+      "name": "durum groot mix"
+    },
+    {
+      "id": 767860786087687,
+      "name": "durum klein kipfilet"
+    },
+    {
+      "id": 8,
+      "name": "durum groot kipfilet"
     }
   ]
 }
