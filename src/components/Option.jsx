@@ -22,10 +22,17 @@ font-size:80px;
 
 `
 export const Option = ({item}) => {
-    const img = require(`../assets/images/pita/${item.pita}.png`)
+  let img =null;
+  try {
+     img = require(`../assets/images/pita/${item.name}.png`)
+  } catch (error) {
+    console.log(error)
+  }
+
   return (
-      <><Item><Image src={img} alt={item.pita} />
-      <ItemTitle>{item.pita}</ItemTitle>
+      <><Item>
+        {img && <Image src={img} alt={item.name} />}
+      <ItemTitle>{item.name}</ItemTitle>
       </Item></>
     
   )

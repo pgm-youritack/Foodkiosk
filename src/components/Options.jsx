@@ -28,23 +28,24 @@ scrollbar-width:none;
 `;
 
 const pita = [
-  { id: 1, pita: "pita klein" },
-  { id: 2, pita: "pita groot" },
-  { id: 3, pita: "pita kip klein" },
-  { id: 4, pita: "pita kip groot" },
-  { id: 5, pita: "pita mix klein" },
-  { id: 6, pita: "pita mix groot" },
-  { id: 7, pita: "pita kipfilet klein" },
-  { id: 8, pita: "pita kipfilet groot" },
+  { id: 1, name: "pita klein" },
+  { id: 2, name: "pita groot" },
+  { id: 3, name: "pita kip klein" },
+  { id: 4, name: "pita kip groot" },
+  { id: 5, name: "pita mix klein" },
+  { id: 6, name: "pita mix groot" },
+  { id: 7, name: "pita kipfilet klein" },
+  { id: 8, name: "pita kipfilet groot" },
 ];
 
-const Options = ({ options }) => {
+const Options = ({ options,food }) => {
+  console.log(food)
   return (
     <>
       <OptionsSection>
         <CategoryTitle>{options}</CategoryTitle>
         <OptionsList>
-        {pita.map((item) => (
+        {food.map((item) => (
         <Option item={item} key={item.id}></Option>
       ))}
         </OptionsList>

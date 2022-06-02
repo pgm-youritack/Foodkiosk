@@ -24,6 +24,7 @@ const Foodkiosk = () => {
   const [data, error, isLoading] = useFetch(FOOD_API);
   const [cart, setCart] = useContext(ShoppingCartContext);
   const [showOptions, setShowOptions] = useState(data);
+  console.log(data)
   const changeOption = (option) => {
     option = option.toUpperCase();
     setShowOptions(option);
@@ -41,7 +42,7 @@ const Foodkiosk = () => {
           </Header>
           <MenuFlex>
             <CategoryList onClick={changeOption} items={data.categories}></CategoryList>
-            <Options options={showOptions} items={data.pita}></Options>
+            <Options options={showOptions} food={data.pita}></Options>
           </MenuFlex>
         </div>
       )}
