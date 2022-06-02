@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import styles from "styled-components";
 import CategoryList from "../components/CategoryList";
 import Options from "../components/Options";
-import logo from "../assets/images/pita.png"
+import logo from "../assets/images/pita.png";
 import { FOOD_API } from "../constants/api";
 import useFetch from "../hooks/useFetch";
+import { ShoppingCartContext } from "../App";
 const MenuFlex = styles.div`
   display:flex;
   flex-direction:row;
@@ -20,22 +21,32 @@ const Logo = styles.img`
 `;
 
 const Foodkiosk = () => {
-  const [data, error, loading] = useFetch(FOOD_API);
-  const [items,setItems]=useState(data);
-  const [categories,setCategories]=useState();
+  const [data, error, isLoading] = useFetch(FOOD_API);
+  const [items, setItems] = useState(data);
+  const [cart, setCart] = useContext(ShoppingCartContext);
   const [showOptions, setShowOptions] = useState("PITA");
-
+  console.log(data);
   const changeOption = (option) => {
     option = option.toUpperCase();
     setShowOptions(option);
   };
   return (
     <>
-      <Header><Logo src={logo} alt="logo"/></Header>
-      <MenuFlex>
-        <CategoryList onClick={changeOption}></CategoryList>
-        <Options options={showOptions}></Options>
-      </MenuFlex>
+      {error ? (
+        <div>{error.message}</div>
+      ) : isLoading || !data ? (
+        <div>its loading</div>
+      ) : (
+        <div>
+          <Header>
+            <Logo src={logo} alt="logo" />
+          </Header>
+          <MenuFlex>
+            <CategoryList onClick={changeOption}></CategoryList>
+            <Options options={showOptions}></Options>
+          </MenuFlex>
+        </div>
+      )}
     </>
   );
 };

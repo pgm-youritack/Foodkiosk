@@ -15,11 +15,8 @@ const CategoryListStyle = styles.ul`
   text-align:center;
   overflow-y: scroll;
   scrollbar-width:none;
-  -ms-overflow-style: none; 
-  &::-webkit-scrollbar {
-    display: none;
-`;
 
+`;
 const categoryItems = [
   { id: 1, category: "pita"},
   { id: 2, category: "kapsalon" },
@@ -28,11 +25,12 @@ const categoryItems = [
   { id: 5, category: "frietjes" },  
   { id: 6, category: "drank" },  
 ];
-const CategoryList = ({onClick}) => {
+const CategoryList = ({onClick,items}) => {
+  console.log(items);
   return (
-    <CategoryListStyle >
+    <CategoryListStyle key={4564564894798} >
       {categoryItems.map((item) => (
-        <CategoryItem onClick={onClick} item={item}></CategoryItem>
+        <CategoryItem onClick={onClick} item={item} key={item.id}></CategoryItem>
       ))}
     </CategoryListStyle>
   );

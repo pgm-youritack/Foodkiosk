@@ -1,50 +1,69 @@
+{
+  "categories": [
     {
-        "categories": [
-            "Pita",
-            "kapsalon",
-            "durum",
-            "snacks",
-            "frietjes",
-            "frisdrank"
-        ],
-        "pita":[
-            {
-                "id":1,
-                "name":"pita klein"
-            },
-            {
-                "id":2,
-                "name":"pita groot"
-            
-            },
-            {
-                "id":3,
-                "name":"pita klein kip"
-            
-            },
-            {
-                "id":4,
-                "name":"pita groot  kip"
-            
-            },
-            {
-                "id":5,
-                "name":"pita klein mix"
-            
-            },
-            {
-                "id":6,
-                "name":"pita groot mix"
-            
-            },
-            {
-                "id":7,
-                "name":"pita klein kipfilet"
-            
-            },
-            {
-                "id":8,
-                "name":"pita groot kipfilet"
-            }
-        ]
+      "id": 7897465156898965,
+      "name": "pita"
+    },
+    {
+      "id": 56100898778955511,
+      "name": "kapsalon"
+    },
+    {
+      "id": 8785575755577,
+      "name": "durum"
+    },
+
+    {
+      "id": 89798449484565,
+      "name": "snacks"
     }
+    ,
+
+    {
+      "id": 98855554444,
+      "name": "frietjes"
+    },
+
+    {
+      "id": 89746648991189198,
+      "name": "drank"
+    }
+  ],
+
+
+
+  "pita": [
+    {
+      "id": 1,
+      "name": "pita klein"
+    },
+    {
+      "id": 2,
+      "name": "pita groot"
+    },
+    {
+      "id": 3,
+      "name": "pita klein kip"
+    },
+    {
+      "id": 4,
+      "name": "pita groot  kip"
+    },
+    {
+      "id": 5,
+      "name": "pita klein mix"
+    },
+    {
+      "id": 6,
+      "name": "pita groot mix"
+    },
+    {
+      "id": 7,
+      "name": "pita klein kipfilet"
+    },
+    {
+      "id": 8,
+      "name": "pita groot kipfilet"
+    }
+  ]
+}

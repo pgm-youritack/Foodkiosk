@@ -19,7 +19,7 @@ const CategoryItem = ({ item,onClick}) => {
   const img = require(`../assets/images/categories/${item.category}.png`)
   return (
     <>
-      <ListItem onClick={()=>onClick(item.category)} key="{item.id}">
+      <ListItem onClick={()=>onClick(item.category)}>
         <Image src={img} alt={item.category} />
         {item.category}
       </ListItem>
