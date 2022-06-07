@@ -34,8 +34,9 @@ export const Option = ({item}) => {
   } catch (error) {
     console.log(error)
   }
-
+  console.log(item)
   return (
+    
       <><Item onClick={() => Toggle(item)} >
         {img && <Image src={img} alt={item.name} />}
       <ItemTitle>{item.name}</ItemTitle>
@@ -43,7 +44,9 @@ export const Option = ({item}) => {
       <Modal
         show={showModal}
         close={Toggle}
-        productname={item.name}
+        productName={item.name}
+        productId={item.id}
+        productPrice={item}
 
       >
         

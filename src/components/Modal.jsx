@@ -10,8 +10,10 @@ height: 100%;
 overflow: auto;
 background-color: rgb(0,0,0);
 background-color: rgba(0,0,0,0.4);
+
 `
 const ModalContent = styled.div`
+border-radius:25px;
 background-color: #fefefe;
 align-items:center;
 text-align:center;
@@ -28,7 +30,7 @@ const AmountCont = styled.div`
 display:flex;
 flex-direction:row;
 `
-const Modal = ({show,close,modalcontent,defaultAmount = 0, children}) => {
+const Modal = ({show,close,productName,productPrice,defaultAmount = 0, children}) => {
     const [amount ,setAmount]=useState(defaultAmount);
 const setCartContext=(val)=>{
   setAmount(val);
@@ -41,8 +43,8 @@ const detractAmount =()=>{
   return (
       <>{show ?
         <Modalcomponent>
-        <ModalContent> <h1>test</h1>
-        <div>{children}</div>
+        <ModalContent> <h1>{productName}</h1>
+        <h2>{productPrice}</h2>
         <AmountCont><button onClick={detractAmount} >-</button><input value={amount}></input><button onClick={()=>setCartContext(parseInt(amount)+1)}>+</button> </AmountCont>
         <button onClick={()=>close()}>keer terug</button>
         </ModalContent>
