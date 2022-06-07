@@ -16,30 +16,19 @@ font-size:120px;
 
 `;
 const OptionsList = styles.ul`
-columns:2;
+display:grid;
+grid-template-columns: repeat(2,1fr);
+gap: 1rem;
 margin:2rem;
 padding:0rem;
-width:532px;
-height:1089px;
 align-items:center;
 text-align:center;
 overflow-y: scroll;
 scrollbar-width:none;
+height:1000px;
 `;
 
-const pita = [
-  { id: 1, name: "pita klein" },
-  { id: 2, name: "pita groot" },
-  { id: 3, name: "pita kip klein" },
-  { id: 4, name: "pita kip groot" },
-  { id: 5, name: "pita mix klein" },
-  { id: 6, name: "pita mix groot" },
-  { id: 7, name: "pita kipfilet klein" },
-  { id: 8, name: "pita kipfilet groot" },
-];
-
 const Options = ({ options,food }) => {
-  console.log(food)
   return (
     <>
       <OptionsSection>

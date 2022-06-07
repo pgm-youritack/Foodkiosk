@@ -1,11 +1,12 @@
-import React, { useContext, useState } from "react";
+import React, {  useState } from "react";
 import styles from "styled-components";
 import CategoryList from "../components/CategoryList";
 import Options from "../components/Options";
 import logo from "../assets/images/pita.png";
 import { FOOD_API } from "../constants/api";
 import useFetch from "../hooks/useFetch";
-import { ShoppingCartContext } from "../App";
+// import { ShoppingCartContext } from "../App";
+import { motion } from "framer-motion";
 const MenuFlex = styles.div`
   display:flex;
   flex-direction:row;
@@ -22,12 +23,11 @@ const Logo = styles.img`
 
 const Foodkiosk = () => {
   const [data, error, isLoading] = useFetch(FOOD_API);
-  const [cart, setCart] = useContext(ShoppingCartContext);
-  const [showOptions, setShowOptions] = useState(data);
-  console.log(data)
+  const [activeCategory, setActiveCategory] = useState("pita")
+  // const [cart, setCart] = useContext(ShoppingCartContext);
   const changeOption = (option) => {
-    option = option.toUpperCase();
-    setShowOptions(option);
+
+    setActiveCategory(option);
   };
   return (
     <>
@@ -36,15 +36,19 @@ const Foodkiosk = () => {
       ) : isLoading || !data ? (
         <div>its loading</div>
       ) : (
-        <div>
+        <motion.div
+        initial={{scale:0}}
+        animate={{scale:1,transition:{duration:0.5}}}
+        exit={{scale:0,transition:{duration:0.3}}}
+        >
           <Header>
             <Logo src={logo} alt="logo" />
           </Header>
           <MenuFlex>
             <CategoryList onClick={changeOption} items={data.categories}></CategoryList>
-            <Options options={showOptions} food={data.pita}></Options>
+            <Options options={activeCategory} food={data[activeCategory]}></Options>
           </MenuFlex>
-        </div>
+        </motion.div>
       )}
     </>
   );

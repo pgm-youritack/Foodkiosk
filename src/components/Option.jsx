@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styles from'styled-components';
-
+import Modal from './Modal';
 const Item=styles.li`
 display:flex;
 flex-direction:column;
@@ -22,6 +22,12 @@ font-size:80px;
 
 `
 export const Option = ({item}) => {
+  const [showModal, setShowModal] = useState();
+
+
+  const Toggle = (content) => {
+    setShowModal(!showModal);
+  };
   let img =null;
   try {
      img = require(`../assets/images/pita/${item.name}.png`)
@@ -30,10 +36,16 @@ export const Option = ({item}) => {
   }
 
   return (
-      <><Item>
+      <><Item onClick={() => Toggle(item)} >
         {img && <Image src={img} alt={item.name} />}
       <ItemTitle>{item.name}</ItemTitle>
-      </Item></>
+      </Item>
+      <Modal
+        show={showModal}
+        close={Toggle}
+        modalcontent={item.name}
+      ></Modal>
+      </>
     
   )
 }

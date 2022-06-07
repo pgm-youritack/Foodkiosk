@@ -5,12 +5,13 @@ import { ROUTES } from "../constants/routes";
 import TakeOut from "../assets/images/fast-dlivery.svg";
 import Delivery from "../assets/images/food-delivery.svg";
 import Pita from "../assets/images/pita.png";
-
+import { motion } from "framer-motion";
 const Center = styles.div`
   display:flex;
   flex-direction:column;
   gap:5rem;
   align-items:center;
+  align-text:center;
 `;
 
 const NavButtons = styles.div`
@@ -51,19 +52,25 @@ const Image = styles.img`
 
 const Choose = () => {
   return (
-    <Center>
-      <img src={Pita} alt="PitaLogo" />
-      <NavButtons>
-        <Link to={ROUTES.KIOSK}>
-          <Image src={TakeOut} alt="takeout" />
-          Leveren
-        </Link>
-        <Link to={ROUTES.KIOSK}>
-          <Image src={Delivery} alt="Delivery" />
-          Ophalen
-        </Link>
-      </NavButtons>
-    </Center>
+    <motion.div
+    initial={{scale:0}}
+    animate={{scale:1,transition:{duration:0.5}}}
+        exit={{scale:0,transition:{duration:0.3}}}
+    >
+      <Center>
+        <img src={Pita} alt="PitaLogo" />
+        <NavButtons>
+          <Link to={ROUTES.KIOSK}>
+            <Image src={TakeOut} alt="takeout" />
+            Leveren
+          </Link>
+          <Link to={ROUTES.KIOSK}>
+            <Image src={Delivery} alt="Delivery" />
+            Ophalen
+          </Link>
+        </NavButtons>
+      </Center>
+    </motion.div>
   );
 };
 
