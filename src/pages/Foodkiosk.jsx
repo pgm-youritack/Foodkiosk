@@ -7,10 +7,12 @@ import { FOOD_API } from "../constants/api";
 import useFetch from "../hooks/useFetch";
 // import { ShoppingCartContext } from "../App";
 import { motion } from "framer-motion";
+import ShoppingCart from "../components/ShoppingCart";
 const MenuFlex = styles.div`
   display:flex;
   flex-direction:row;
   gap:3rem;
+  margin-top:5rem;
 `;
 const Header = styles.div`
 align-items:center;
@@ -48,6 +50,7 @@ const Foodkiosk = () => {
             <CategoryList onClick={changeOption} items={data.categories}></CategoryList>
             <Options options={activeCategory} food={data[activeCategory]}></Options>
           </MenuFlex>
+          <ShoppingCart></ShoppingCart>
         </motion.div>
       )}
     </>

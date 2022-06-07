@@ -34,7 +34,6 @@ export const Option = ({item}) => {
   } catch (error) {
     console.log(error)
   }
-  console.log(item)
   return (
     
       <><Item onClick={() => Toggle(item)} >
@@ -44,9 +43,7 @@ export const Option = ({item}) => {
       <Modal
         show={showModal}
         close={Toggle}
-        productName={item.name}
-        productId={item.id}
-        productPrice={item}
+        item={item}
 
       >
         
