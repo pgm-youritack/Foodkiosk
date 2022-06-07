@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 const Modalcomponent = styled.div`
 position: fixed;
@@ -24,14 +24,27 @@ const Buttons = styled.div`
 display:flex;
 justify-content:space-between;
 `
-const Modal = ({show,close,modalcontent}) => {
-    console.log(modalcontent)
+const AmountCont = styled.div`
+display:flex;
+flex-direction:row;
+`
+const Modal = ({show,close,modalcontent,defaultAmount = 0, children}) => {
+    const [amount ,setAmount]=useState(defaultAmount);
+const setCartContext=(val)=>{
+  setAmount(val);
+}
+const detractAmount =()=>{
+  if(amount<=1)return setCartContext(0);
+  return setCartContext(parseInt(amount)-1)
+}
+
   return (
       <>{show ?
         <Modalcomponent>
         <ModalContent> <h1>test</h1>
-        <p>{modalcontent}</p>
-        <Buttons><button onClick={()=>close()}>Delete</button><button onClick={()=>close()}>Cancel</button></Buttons>
+        <div>{children}</div>
+        <AmountCont><button onClick={detractAmount} >-</button><input value={amount}></input><button onClick={()=>setCartContext(parseInt(amount)+1)}>+</button> </AmountCont>
+        <button onClick={()=>close()}>keer terug</button>
         </ModalContent>
         </Modalcomponent>
     :null}

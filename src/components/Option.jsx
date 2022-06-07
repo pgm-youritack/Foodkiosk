@@ -43,8 +43,11 @@ export const Option = ({item}) => {
       <Modal
         show={showModal}
         close={Toggle}
-        modalcontent={item.name}
-      ></Modal>
+        productname={item.name}
+
+      >
+        
+      </Modal>
       </>
     
   )

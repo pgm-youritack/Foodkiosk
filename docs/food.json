@@ -31,35 +31,44 @@
   "pita": [
     {
       "id": 125678484984,
-      "name": "pita klein"
+      "name": "pita klein",
+      "price":"7,0"
     },
     {
       "id": 5645645645656,
-      "name": "pita groot"
+      "name": "pita groot",
+      "price":"8,0"
     },
     {
       "id": 345654638678,
-      "name": "pita klein kip"
+      "name": "pita klein kip",
+      "price":"7,0"
     },
     {
       "id": 4678687972978,
-      "name": "pita groot kip"
+      "name": "pita groot kip",
+      "price":"8,0"
+      
     },
     {
       "id": 529782982978,
-      "name": "pita klein mix"
+      "name": "pita klein mix",
+      "price":"7.0"
     },
     {
       "id": 67927897863,
-      "name": "pita groot mix"
+      "name": "pita groot mix",
+      "price":"8,0"
     },
     {
       "id": 707667867806,
-      "name": "pita klein kipfilet"
+      "name": "pita klein kipfilet",
+      "price":"7,0"
     },
     {
       "id": 87687976376,
-      "name": "pita groot kipfilet"
+      "name": "pita groot kipfilet",
+      "price":"8,0"
     }
   ]
   ,
