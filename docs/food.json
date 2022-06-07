@@ -63,7 +63,8 @@
     {
       "id": 67927897863,
       "name": "pita groot mix",
-      "price":"8,0"
+      "price":"8,0",
+      "slug":"pita.png"
     },
     {
       "id": 707667867806,
@@ -74,7 +75,8 @@
     {
       "id": 87687976376,
       "name": "pita groot kipfilet",
-      "price":"pita_kip.png"
+      "price":"8,0",
+      "slug":"pita_kip.png"
     }
   ]
   ,

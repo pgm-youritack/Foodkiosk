@@ -30,7 +30,7 @@ export const Option = ({item}) => {
   };
   let img =null;
   try {
-     img = require(`../assets/images/pita/${item.name}.png`)
+     img = require(`../assets/images/pita/${item.slug}`)
   } catch (error) {
     console.log(error)
   }
