@@ -20,10 +20,11 @@ const CategoryListStyle = styles.ul`
 
 const CategoryList = ({onClick,items}) => {
   
+  
   return (
     <CategoryListStyle key={4564564894798} >
       {items.map((item) => (
-        <CategoryItem onClick={onClick} item={item} key={item.id}></CategoryItem>
+        <CategoryItem  onClick={onClick} item={item} key={item.id}></CategoryItem>
       ))}
     </CategoryListStyle>
   );

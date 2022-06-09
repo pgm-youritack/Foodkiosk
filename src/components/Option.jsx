@@ -18,7 +18,8 @@ margin:0rem;
 `
 const ItemTitle = styles.p`
 margin:0rem;
-font-size:80px;
+font-size:60px;
+padding:0rem 2rem;
 
 `
 export const Option = ({item}) => {
@@ -30,7 +31,7 @@ export const Option = ({item}) => {
   };
   let img =null;
   try {
-     img = require(`../assets/images/pita/${item.slug}`)
+     img = require(`../assets/images/${item.slug}`)
   } catch (error) {
     console.log(error)
   }
@@ -44,6 +45,8 @@ export const Option = ({item}) => {
         show={showModal}
         close={Toggle}
         item={item}
+        image={img}
+        key={item.id}
 
       >
         

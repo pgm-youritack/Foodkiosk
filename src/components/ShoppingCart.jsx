@@ -5,10 +5,12 @@ import shoppingcart from "../assets/images/shopping_cart.png";
 import { motion } from "framer-motion";
 
 const ShoppingCartContainer = styled(motion.div)`
+
   display: flex;
+  position:absolute;
+  width:98vw;
   flex-direction: column;
   align-items: center;
-  margin-bottom:0rem;
 `;
 
 const ShoppingAmount = styled.div`
@@ -48,6 +50,8 @@ const ShoppingCartListContainer = styled(motion.div)`
   border: solid black 1px;
   border-radius: 25px;
   background-color: white;
+
+  margin-bottom:0rem;
 `;
 const ShoppingCartList = styled(motion.ul)`
   padding: 5rem 0rem 0rem 5rem;
@@ -59,8 +63,8 @@ const shoppingCartAnimation = {
   closed: { y: 0 },
 };
 const shoppingcartContainerAnimation = {
-  open: { height: "100rem" },
-  closed: { height: "8rem" },
+  open: { height: "100rem"},
+  closed: { height: "1rem" },
 };
 const shoppingCartListAnimation = {
   open: { display: 'block' },
@@ -69,7 +73,6 @@ const shoppingCartListAnimation = {
 const ShoppingCart = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [cart, setCart] = useContext(ShoppingCartContext);
-  console.log(isOpen);
   const items = Object.values(cart).reduce(
     (sum, { amount }) => sum + amount,
     0
@@ -78,7 +81,6 @@ const ShoppingCart = () => {
     (sum, { price,amount }) => sum + (price*amount),
     0
   );
-  console.log(total)
   return (
     <>
       <ShoppingCartContainer 

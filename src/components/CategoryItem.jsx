@@ -9,6 +9,7 @@ const ListItem = styles(motion.li)`
   text-decoration:none;
   list-style:none;
   margin-bottom:5rem;
+  font-size:45px;
 `;
 const Image = styles.img`
   width:180px;
