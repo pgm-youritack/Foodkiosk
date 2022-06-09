@@ -1,5 +1,7 @@
 body{
   font-family: 'open-sans';
+  overflow-y: hidden;
+  position: fixed;
 }
 
 li{

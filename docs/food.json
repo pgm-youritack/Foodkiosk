@@ -32,87 +32,319 @@
     {
       "id": 125678484984,
       "name": "pita klein",
-      "price":"7.0",
-      "slug":"pita.png"
+      "price": "7.0",
+      "slug": "pita/pita.png",
+      "content": [
+        "warm pita broodje",
+        "pita vlees",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
     },
     {
       "id": 5645645645656,
       "name": "pita groot",
-      "price":"8.0",
-      "slug":"pita.png"
+      "price": "8.0",
+      "slug": "pita/pita.png",
+      "content": [
+        "warm groot pita broodje",
+        "pita vlees",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
     },
     {
       "id": 345654638678,
       "name": "pita klein kip",
-      "price":"7.0",
-      "slug":"pita_kip.png"
+      "price": "7.0",
+      "slug": "pita/pita_kip.png",
+      "content": [
+        "warm pita broodje",
+        "kip",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
     },
     {
       "id": 4678687972978,
       "name": "pita groot kip",
-      "price":"8.0",
-      "slug":"pita_kip.png"
-      
+      "price": "8.0",
+      "slug": "pita/pita_kip.png",
+      "content": [
+        "warm groot pita broodje",
+        "kip vlees",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
     },
     {
       "id": 529782982978,
       "name": "pita klein mix",
-      "price":"7.0",
-      "slug":"pita.png"
+      "price": "7.0",
+      "slug": "pita/pita.png",
+      "content": [
+        "warm pita broodje",
+        "pita vlees",
+        "kip",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
     },
     {
       "id": 67927897863,
       "name": "pita groot mix",
-      "price":"8.0",
-      "slug":"pita.png"
+      "price": "8.0",
+      "slug": "pita.png",
+      "content": [
+        "warm groot pita broodje",
+        "pita vlees",
+        "kip",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
     },
     {
       "id": 707667867806,
       "name": "pita klein kipfilet",
-      "price":"7.0",
-      "slug":"pita_kip.png"
+      "price": "7.0",
+      "slug": "pita/pita_kip.png",
+      "content": [
+        "warm pita broodje",
+        "kipfilet",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
     },
     {
       "id": 87687976376,
       "name": "pita groot kipfilet",
-      "price":"8.0",
-      "slug":"pita_kip.png"
+      "price": "8.0",
+      "slug": "pita/pita_kip.png",
+      "content": [
+        "warm groot pita broodje",
+        "kipfilet",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
     }
-  ]
-  ,
-
+  ],
   "durum": [
     {
       "id": 1786856325863,
-      "name": "durum klein"
+      "name": "durum klein",
+      "slug": "durum/durum.jpg",
+      "price": "6",
+      "content": [
+        "warm turkse wrap",
+        "pita vlees",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
     },
     {
       "id": 67856367862,
-      "name": "durum groot"
+      "name": "durum groot",
+      "slug": "durum/durum.jpg",
+      "price": "7",
+      "content": [
+        "warm groot turkse wrap",
+        "pita vlees",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
     },
     {
       "id": 306786876786,
-      "name": "durum klein kip"
+      "name": "durum klein kip",
+      "slug": "durum/durumkip.jpg",
+      "price": "6",
+      "content": [
+        "warm  turkse wrap",
+        "kip",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
     },
     {
       "id": 40786876876,
-      "name": "durum groot kip"
+      "name": "durum groot kip",
+      "slug": "durum/durumkip.jpg",
+      "price": "7",
+      "content": [
+        "warm groot turkse wrap",
+        "kip",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
     },
     {
       "id": 57860876876,
-      "name": "durum klein mix"
+      "name": "durum klein mix",
+      "slug": "durum/durum.jpg",
+      "price": "6",
+      "content": [
+        "warm turkse wrap",
+        "pita vlees",
+        "kip",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
     },
     {
       "id": 67860786876,
-      "name": "durum groot mix"
+      "name": "durum groot mix",
+      "slug": "durum/durum.jpg",
+      "price": "7",
+      "content": [
+        "warm groot turkse wrap",
+        "pita vlees",
+        "kip",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
     },
     {
       "id": 767860786087687,
-      "name": "durum klein kipfilet"
+      "name": "durum klein kipfilet",
+      "slug": "durum/durumkip.jpg",
+      "price": "6",
+      "content": [
+        "warm turkse wrap",
+        "kipfilet",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
     },
     {
-      "id": 8,
-      "name": "durum groot kipfilet"
+      "id": 848978128979,
+      "name": "durum groot kipfilet",
+      "slug": "durum/durumkip.jpg",
+      "price": "7",
+      "content": [
+        "warm groot turkse wrap",
+        "kipfilet",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
+    }
+  ],
+  "kapsalon": [
+    {
+      "id": 7682678678678,
+      "name": "kapsalon klein",
+      "slug": "kapsalon/kapsalon.jpg",
+      "price": "9",
+      "content": ["kaas", "pita vlees", "sla", "tomaat", "wortel", "ajuin"]
+    },
+    {
+      "id": 6078678997890,
+      "name": "kapsalon groot",
+      "slug": "kapsalon/kapsalon.jpg",
+      "price": "10",
+      "content": ["kaas", "pita vlees", "sla", "tomaat", "wortel", "ajuin"]
+    },
+    {
+      "id": 546078697890,
+      "name": "kapsalon klein kip",
+      "slug": "kapsalon/kapsalonkip.jpg",
+      "price": "9",
+      "content": ["kaas", "kip", "sla", "tomaat", "wortel", "ajuin"]
+    },
+    {
+      "id": 870698790789,
+      "name": "kapsalon groot kip",
+      "slug": "durum/durumkip.jpg",
+      "price": "10",
+      "content": ["kaas", "kip", "sla", "tomaat", "wortel", "ajuin"]
+    },
+    {
+      "id": 357373733783,
+      "name": "kapsalon klein mix",
+      "slug": "kapsalon/kapsalon.jpg",
+      "price": "9",
+      "content": [
+        "kaas",
+        "pita vlees",
+        "kip",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
+    },
+    {
+      "id": 67861878,
+      "name": "kapsalon groot mix",
+      "slug": "kapsalon/kapsalon.jpg",
+      "content": [
+        "warm groot turkse wrap",
+        "pita vlees",
+        "kip",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
+    },
+    {
+      "id": 175687678978,
+      "name": "kapsalon klein kipfilet",
+      "slug": "kapsalon/kapsalonkip.jpg",
+      "price":"9",
+      "content": [
+        "kaas",
+        "kipfilet",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
+    },
+    {
+      "id": 60782876289287,
+      "name": "kapsalon groot kipfilet",
+      "slug": "kapsalon/kapsalonkip.jpg",
+      "price":"10",
+      "content": [
+        "kaas",
+        "kipfilet",
+        "sla",
+        "tomaat",
+        "wortel",
+        "ajuin"
+      ]
     }
   ]
 }

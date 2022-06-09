@@ -8,6 +8,7 @@ const ShoppingCartContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom:0rem;
 `;
 
 const ShoppingAmount = styled.div`
@@ -46,21 +47,25 @@ const ShoppingCartListContainer = styled(motion.div)`
   width: 100%;
   border: solid black 1px;
   border-radius: 25px;
-  height: 5rem;
   background-color: white;
 `;
-const ShoppingCartList = styled.ul`
+const ShoppingCartList = styled(motion.ul)`
   padding: 5rem 0rem 0rem 5rem;
+  display:none;
+
 `;
 const shoppingCartAnimation = {
   open: { y: -1500 },
   closed: { y: 0 },
 };
-const shoppingCartListAnimation = {
+const shoppingcartContainerAnimation = {
   open: { height: "100rem" },
-  closed: { height: "5rem" },
+  closed: { height: "8rem" },
 };
-
+const shoppingCartListAnimation = {
+  open: { display: 'block' },
+  closed: { display: "none" },
+};
 const ShoppingCart = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [cart, setCart] = useContext(ShoppingCartContext);
@@ -70,13 +75,13 @@ const ShoppingCart = () => {
     0
   );
   const total = Object.values(cart).reduce(
-    (sum, { price }) => sum * price,
+    (sum, { price,amount }) => sum + (price*amount),
     0
   );
   console.log(total)
   return (
     <>
-      <ShoppingCartContainer
+      <ShoppingCartContainer 
         animate={isOpen ? "open" : "closed"}
         variants={shoppingCartAnimation}
         transition={{ duration: 0.25 }}
@@ -87,18 +92,21 @@ const ShoppingCart = () => {
         </ShoppingCartItem>
         <ShoppingCartListContainer
           animate={isOpen ? "open" : "closed"}
-          variants={shoppingCartListAnimation}
+          variants={shoppingcartContainerAnimation}
           transition={{ duration: 0.25 }}
         >
-          <ShoppingCartList>
+          <ShoppingCartList animate={isOpen ? "open" : "closed"}
+        variants={shoppingCartListAnimation}
+        transition={{ duration: 0.25 }}>
             {Object.values(cart).map((item) => (
               <li key={item.id}>
                 {item.name} {item.amount}
               </li>
             ))}
-          </ShoppingCartList>
-          <p>Total:{total}</p>
+            <p>Total:{total}</p>
           <button onClick={() => setIsOpen((isOpen) => !isOpen)}>Ga terug</button>
+          </ShoppingCartList>
+          
         </ShoppingCartListContainer>
       </ShoppingCartContainer>
     </>
