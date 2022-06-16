@@ -403,7 +403,7 @@
     {
       "id": 1789719819,
       "name": "kip nuggets",
-      "slug": "kapsalon/kipnuggets.png",
+      "slug": "snacks/kipnuggets.png",
       "price": "3.50"
     },
     {
@@ -475,8 +475,8 @@
     },
     {
       "id": 17567189789,
-      "name": "kapsalon groot mix",
-      "slug": "kapsalon/kapsalon.jpg",
+      "name": "golden power energy",
+      "slug": "drinks/goldenpower.jpg",
       "price":"2.30"
     },
     {

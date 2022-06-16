@@ -140,15 +140,15 @@ const Modal = ({ show, close, item, image, defaultAmount = 0 }) => {
           >
             <Modalimage src={image} alt={item.name} />
             <ProductName>{item.name}</ProductName>
-            <h1>Inhoud</h1>
+            
 
-            {ingredients ?<Ingredients>
+            {ingredients ?<Ingredients><h1>Inhoud</h1>
               {ingredients.map((ingredient) => (
                 <Ingredient>{ingredient},</Ingredient>
               ))}
             </Ingredients>:" "}
             
-
+                <h1>€{item.price}</h1>
             <AmountCont>
               <Decrease onClick={() => setCartContext(parseInt(amount) - 1)}>
                 -
