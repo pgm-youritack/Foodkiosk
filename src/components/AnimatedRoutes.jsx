@@ -6,6 +6,7 @@ import { ROUTES } from "../constants/routes";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 import { AnimatePresence } from "framer-motion";
+import Payment from "../pages/Payment";
 function AnimatedRoutes() {
   const location = useLocation();
   return (
@@ -13,6 +14,7 @@ function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         <Route path={ROUTES.BASE} element={<Choose />}></Route>
         <Route path={ROUTES.KIOSK} element={<Foodkiosk />}></Route>
+        <Route path={ROUTES.PAYMENT} element={<Payment />}></Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>

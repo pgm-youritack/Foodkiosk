@@ -1,7 +1,7 @@
 export const ROUTES = Object.freeze({
     BASE: '/',
-    KIOSK: 'Foodkiosk',
-    PAYMENT: 'payment',
+    KIOSK: 'Foodkiosk/',
+    PAYMENT: '/Payment',
 
 });
 

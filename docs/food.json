@@ -308,6 +308,7 @@
       "id": 67861878,
       "name": "kapsalon groot mix",
       "slug": "kapsalon/kapsalon.jpg",
+      "price":"10.00",
       "content": [
         "warm groot turkse wrap",
         "pita vlees",
@@ -346,5 +347,151 @@
         "ajuin"
       ]
     }
+  ],
+  "frietjes": [
+    {
+      "id": 6571713561753,
+      "name": "kleine friet",
+      "slug": "frietjes/frietjes.png",
+      "price": "3"
+    },
+    {
+      "id": 157677567567,
+      "name": "medium friet",
+      "slug": "frietjes/frietjes.png",
+      "price": "4.20"
+    },
+    {
+      "id": 7897078978979,
+      "name": "grote friet",
+      "slug": "frietjes/frietjes.png",
+      "price": "5.20"
+    },
+    {
+      "id": 15674514165,
+      "name": "kleine friet speciaal",
+      "slug": "frietjes/frietjes_speciaal.png",
+      "price": "4.00"
+    },
+    {
+      "id": 879871987198,
+      "name": "medium friet speciaal",
+      "slug": "frietjes/frietjes_speciaal.png",
+      "price": "5.50"
+    },
+    {
+      "id": 8798708979,
+      "name": "grote friet speciaal",
+      "slug": "frietjes/frietjes_speciaal.png",
+      "price":"7.50"
+    }
+  ],
+  "snacks": [
+    {
+      "id": 4671567156,
+      "name": "frikandel",
+      "slug": "snacks/frikandel.jpg",
+      "price": "3"
+    },
+    {
+      "id": 167165756,
+      "name": "frikandel speciaal",
+      "slug": "snacks/frikandelspeciaal.jpg",
+      "price": "3.50",
+      "content": ["ajuin", "ketchup", "mayonaise"]
+    },
+    {
+      "id": 1789719819,
+      "name": "kip nuggets",
+      "slug": "kapsalon/kipnuggets.png",
+      "price": "3.50"
+    },
+    {
+      "id": 156765715676,
+      "name": "kip fingers",
+      "slug": "snacks/kipfingers.jpg",
+      "price": "3.50"
+    },
+    {
+      "id": 178971981798,
+      "name": "kipcorn",
+      "slug": "snacks/kipcorn.jpg",
+      "price": "3.50"
+    },
+    {
+      "id": 1560564056,
+      "name": "boulet",
+      "slug": "snacks/boulet.jpg",
+      "price":"3.00"
+    },
+    {
+      "id": 12898745456,
+      "name": "boulet speciaal",
+      "slug": "snacks/bouletspeciaal.jpg",
+      "price":"9",
+      "content": [
+        "mayonaise",
+        "ketchup",
+        "ajuin"
+      ]
+    },
+    {
+      "id": 23781719789,
+      "name": "mexicano",
+      "slug": "snacks/Mexicano.jpg",
+      "price":"3.50"
+      
+    }
+  ],  "drank": [
+    {
+      "id": 687167165765,
+      "name": "coco-cola",
+      "slug": "drinks/cocacola.png",
+      "price": "2.30"
+    },
+    {
+      "id": 89176751576156,
+      "name": "coco-cola zero",
+      "slug": "drinks/cocacolazero.jpg",
+      "price": "2.30"
+    },
+    {
+      "id": 23781987198,
+      "name": "fanta",
+      "slug": "drinks/fanta.png",
+      "price": "2.30"
+    },
+    {
+      "id": 756105716,
+      "name": "spa reine",
+      "slug": "drinks/spa-reine.jpg",
+      "price": "2.30"
+    },
+    {
+      "id": 5674189179819,
+      "name": "spa bruisend",
+      "slug": "drinks/spabruisend.jpg",
+      "price": "2.30"
+    },
+    {
+      "id": 17567189789,
+      "name": "kapsalon groot mix",
+      "slug": "kapsalon/kapsalon.jpg",
+      "price":"2.30"
+    },
+    {
+      "id": 175687678978,
+      "name": "ice tea",
+      "slug": "drinks/icetea.jpg",
+      "price":"2.30"
+    },
+    {
+      "id": 60782876289287,
+      "name": "tropico",
+      "slug": "drinks/tropico.jpg",
+      "price":"2.30"
+    }
   ]
+  
+
 }

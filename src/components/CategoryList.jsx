@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "styled-components";
 import CategoryItem from "./CategoryItem";
 
@@ -19,14 +19,21 @@ const CategoryListStyle = styles.ul`
 `;
 
 const CategoryList = ({onClick,items}) => {
-  
+  const [selected,setSelected]=useState(items[0].id);
+
+  const handleCategorySelect = (e, id) => {
+    onClick(e);
+    setSelected(id);
+  }
   
   return (
-    <CategoryListStyle key={4564564894798} >
+    <>    <CategoryListStyle key={4564564894798} >
       {items.map((item) => (
-        <CategoryItem  onClick={onClick} item={item} key={item.id}></CategoryItem>
+        <CategoryItem isActive={item.id===selected } onClick={(e) => handleCategorySelect(e, item.id)} item={item} key={item.id}></CategoryItem>
       ))}
     </CategoryListStyle>
+    </>
+
   );
 };
 
